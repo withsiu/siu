@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hướng dẫn hỗ trợ số liệu cho fandom Park Si Woo tại Milan Fashion Week 2026.">
+  <meta name="description" content="Thông tin hỗ trợ Park Si Woo tại Milan Fashion Week 2026.">
   <meta name="theme-color" content="#fbeff4">
   <title>PARK SI WOO — Milan Fashion Week 2026 | Fandom Guide</title>
   <style>
@@ -29,6 +29,7 @@
       --radius-lg: 30px;
       --radius-md: 22px;
       --content: 1120px;
+      --font-main: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     * { box-sizing: border-box; }
@@ -41,7 +42,7 @@
         radial-gradient(circle at 8% 3%, rgba(255,255,255,.92), transparent 22rem),
         radial-gradient(circle at 94% 22%, rgba(249,221,231,.75), transparent 26rem),
         var(--bg);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: var(--font-main);
       font-size: 17px;
       line-height: 1.76;
       text-rendering: optimizeLegibility;
@@ -71,7 +72,7 @@
     }
     .hero-inner { position: relative; z-index: 1; width: min(var(--content), 100%); margin: auto; }
     .hero h1 {
-      max-width: 900px; margin: 0; font-family: Georgia, "Times New Roman", serif;
+      max-width: 900px; margin: 0; font-family: var(--font-main);
       font-size: clamp(3rem, 8vw, 7.3rem); line-height: .91; letter-spacing: -.055em; font-weight: 500;
     }
     .hero h1 span { display: block; margin-top: .28em; color: var(--rose-500); font-size: .43em; line-height: 1.04; letter-spacing: .015em; }
@@ -99,17 +100,17 @@
     .toc .toc-title { display: none; }
 
     main { width: min(var(--content), calc(100% - 2rem)); margin: clamp(2rem, 5vw, 4.5rem) auto; }
-    .intro-card, .priority-wrap, .section, .finale {
+    .intro-card, .priority-wrap, .section, .finale, .about {
       position: relative; border: 1px solid var(--line); border-radius: var(--radius-lg); background: rgba(255,253,254,.92); box-shadow: var(--shadow);
     }
     .intro-card { padding: clamp(1.5rem, 4vw, 3.4rem); margin-bottom: 1.4rem; }
     .intro-card p:first-child { margin-top: 0; }
     .intro-card p:last-child { margin-bottom: 0; }
-    .intro-card::before { content: "♡"; position: absolute; right: 1.35rem; top: .65rem; color: var(--rose-200); font: 3.4rem/1 Georgia, serif; }
+    .intro-card::before { content: "♡"; position: absolute; right: 1.35rem; top: .65rem; color: var(--rose-200); font: 3.4rem/1 var(--font-main); }
 
     .priority-wrap { padding: clamp(1.2rem, 3.5vw, 2.4rem); margin: 1.4rem 0; }
     .priority-head { display: flex; align-items: end; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
-    .priority-head h2 { margin: 0; font: 500 clamp(1.75rem, 4vw, 2.45rem)/1.1 Georgia, "Times New Roman", serif; }
+    .priority-head h2 { margin: 0; font: 700 clamp(1.75rem, 4vw, 2.45rem)/1.1 var(--font-main); }
     .priority-head p { margin: 0; color: var(--muted); font-size: .92rem; }
     .platform-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: .72rem; }
     .platform {
@@ -126,19 +127,21 @@
 
     .section { scroll-margin-top: 7.75rem; margin: 1.4rem 0; padding: clamp(1.35rem, 4vw, 3.2rem); }
     .section-heading { display: grid; grid-template-columns: auto 1fr; gap: clamp(.9rem, 2.5vw, 1.5rem); align-items: start; margin-bottom: 1.3rem; }
-    .num { color: var(--rose-400); font: 500 clamp(2.8rem, 7vw, 5.6rem)/.8 Georgia, "Times New Roman", serif; letter-spacing: -.06em; }
-    .section h2 { margin: 0; font: 500 clamp(1.65rem, 4vw, 2.75rem)/1.12 Georgia, "Times New Roman", serif; letter-spacing: -.025em; }
+    .num { color: var(--rose-400); font: 600 clamp(2.8rem, 7vw, 5.6rem)/.8 var(--font-main); letter-spacing: -.06em; }
+    .section h2 { margin: 0; font: 700 clamp(1.65rem, 4vw, 2.75rem)/1.12 var(--font-main); letter-spacing: -.025em; }
     .section h3 { margin: 1.8rem 0 .55rem; color: var(--rose-700); font-size: 1.02rem; letter-spacing: .045em; }
     .section p { margin: 1rem 0; }
-    .section ul { margin: .65rem 0 1.3rem; padding-left: 1.25rem; }
+    .section ul { margin: .65rem 0 1.3rem; padding-left: 0; list-style: none; }
     .section li { padding: .12rem 0 .12rem .25rem; }
+    .section ul > li { position: relative; padding-left: 1.8rem; }
+    .section ul > li::before { content: "♡"; position: absolute; left: 0; color: var(--rose-400); font-weight: 900; }
     .section li::marker { color: var(--rose-400); }
     .section > :last-child { margin-bottom: 0; }
     blockquote {
       position: relative; margin: 1.45rem 0; padding: 1.35rem 1.4rem 1.35rem 4rem; border: 1px solid rgba(200,91,124,.14); border-radius: var(--radius-md);
-      background: linear-gradient(135deg, var(--rose-50), var(--rose-100)); color: #67374a; font: italic 500 clamp(1.08rem, 2.2vw, 1.3rem)/1.65 Georgia, "Times New Roman", serif;
+      background: linear-gradient(135deg, var(--rose-50), var(--rose-100)); color: #67374a; font: italic 500 clamp(1.08rem, 2.2vw, 1.3rem)/1.65 var(--font-main);
     }
-    blockquote::before { content: "“"; position: absolute; left: 1.1rem; top: .3rem; color: var(--rose-200); font: 4.5rem/1 Georgia, serif; }
+    blockquote::before { content: "“"; position: absolute; left: 1.1rem; top: .3rem; color: var(--rose-200); font: 4.5rem/1 var(--font-main); }
     .keyword { display: inline-block; margin: .2rem .35rem .2rem 0; padding: .24rem .65rem; border: 1px solid var(--line); border-radius: 999px; background: var(--rose-50); color: var(--rose-700); font-weight: 800; letter-spacing: .02em; }
     .action-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .85rem; margin: 1.4rem 0; }
     .callout { padding: 1.15rem 1.25rem; border: 1px solid transparent; border-radius: var(--radius-md); }
@@ -147,11 +150,11 @@
     .callout.good { background: var(--positive); border-color: rgba(38,115,74,.14); color: #315f45; }
     .callout.good h3 { color: var(--positive-ink); }
     .callout.good h3::before { content: "✓"; display: grid; place-items: center; width: 1.65rem; height: 1.65rem; border-radius: 50%; color: white; background: #39a76b; }
-    .callout.good li::marker { color: #39a76b; }
+    .callout.good li::before { color: #39a76b; }
     .callout.avoid { background: var(--warning); border-color: rgba(166,61,81,.14); color: #70444c; }
     .callout.avoid h3 { color: var(--warning-ink); }
     .callout.avoid h3::before { content: "×"; display: grid; place-items: center; width: 1.65rem; height: 1.65rem; border-radius: 50%; color: white; background: #dd5570; }
-    .callout.avoid li::marker { color: #dd5570; }
+    .callout.avoid li::before { color: #dd5570; }
     .checklist { list-style: none; padding-left: 0 !important; }
     .checklist li { position: relative; padding-left: 1.8rem; }
     .checklist li::before { content: "♡"; position: absolute; left: 0; color: var(--rose-400); font-weight: 900; }
@@ -165,10 +168,21 @@
     .finale::before, .finale::after { position: absolute; color: var(--rose-200); font-size: 3.5rem; }
     .finale::before { content: "♡"; left: 7%; top: 7%; transform: rotate(-12deg); }
     .finale::after { content: "✦"; right: 8%; bottom: 9%; }
-    .finale .statement { margin: 1.4rem auto; max-width: 800px; color: var(--rose-700); font: 500 clamp(2.2rem, 6vw, 5.1rem)/1 Georgia, "Times New Roman", serif; letter-spacing: -.035em; }
-    .finale .statement span { display: block; margin-top: .45rem; font: 800 .24em/1.3 Inter, ui-sans-serif, system-ui, sans-serif; letter-spacing: .22em; }
+    .finale .statement { margin: 1.4rem auto; max-width: 800px; color: var(--rose-700); font: 700 clamp(2.2rem, 6vw, 5.1rem)/1 var(--font-main); letter-spacing: -.035em; }
+    .finale .statement span { display: block; margin-top: .45rem; font: 800 .24em/1.3 var(--font-main); letter-spacing: .22em; }
     .finale p { max-width: 800px; margin: 1rem auto; }
     .closing { font-weight: 850; color: var(--rose-700); letter-spacing: .035em; }
+    .about { position: relative; margin-top: 1.5rem; padding: clamp(1.5rem, 4vw, 3.2rem); background: rgba(255,253,254,.94); }
+    .about-heading { display: flex; align-items: center; gap: .75rem; margin-bottom: 1.3rem; }
+    .about-heading span { color: var(--rose-400); font-size: 2rem; line-height: 1; }
+    .about h2 { margin: 0; font: 700 clamp(1.65rem, 4vw, 2.75rem)/1.12 var(--font-main); letter-spacing: -.025em; }
+    .about h3 { margin: 2rem 0 .7rem; color: var(--rose-700); font-size: 1.2rem; }
+    .about ul { margin: .7rem 0 1.3rem; padding-left: 0; list-style: none; }
+    .about li { position: relative; padding: .14rem 0 .14rem 1.8rem; }
+    .about li::before { content: "♡"; position: absolute; left: 0; color: var(--rose-400); font-weight: 900; }
+    .about .finance-note { margin-top: 1.5rem; padding: 1.15rem 1.25rem; border: 1px solid rgba(38,115,74,.14); border-radius: var(--radius-md); background: var(--positive); color: #315f45; }
+    .about .contact { margin: 1.5rem 0 0; padding-top: 1.2rem; border-top: 1px solid var(--line); font-weight: 750; }
+    .about .contact a { color: var(--rose-700); text-decoration-thickness: .08em; text-underline-offset: .18em; overflow-wrap: anywhere; }
 
     footer { width: min(var(--content), calc(100% - 2rem)); margin: 1.5rem auto 6rem; text-align: center; color: var(--muted); font-size: .85rem; }
     .top-link {
@@ -193,7 +207,7 @@
       .toc a { width: 2.55rem; padding-inline: 0; justify-content: center; }
       .toc .toc-title { display: none; }
       main { width: min(100% - 1rem, var(--content)); margin-top: 1rem; }
-      .intro-card, .priority-wrap, .section, .finale { border-radius: 22px; }
+      .intro-card, .priority-wrap, .section, .finale, .about { border-radius: 22px; }
       .priority-head { align-items: start; flex-direction: column; }
       .platform-grid, .action-grid, .mini-grid { grid-template-columns: 1fr; }
       .platform:first-child { grid-column: auto; }
@@ -213,7 +227,7 @@
       .toc-shell, .top-link, .skip-link { display: none; }
       .hero { padding: 2rem 0; }
       main { width: 100%; }
-      .intro-card, .priority-wrap, .section, .finale { box-shadow: none; break-inside: avoid; }
+      .intro-card, .priority-wrap, .section, .finale, .about { box-shadow: none; break-inside: avoid; }
     }
   </style>
 </head>
@@ -225,15 +239,14 @@
     <span class="decor star h1-star" aria-hidden="true"></span>
     <div class="hero-inner">
       <h1>PARK SI WOO <span>— MILAN FASHION WEEK 2026</span></h1>
-      <p class="lead">HƯỚNG DẪN HỖ TRỢ SỐ LIỆU CHO FANDOM</p>
       <div class="date">22–28/9/2026 · Milan</div>
     </div>
   </header>
 
   <nav class="toc-shell" aria-label="Mục lục 17 phần">
-    <p class="toc-label"><span>Mục lục nhanh · 17 phần</span><span>Vuốt ngang để xem thêm</span></p>
+    <p class="toc-label"><span>Mục lục nhanh · 17 phần</span></p>
     <div class="toc">
-      <a href="#section-1"><span>01</span><span class="toc-title">Tại sao Milan quan trọng?</span></a>
+      <a href="#section-1"><span>01</span><span class="toc-title">Tại sao Milan quan trọng với SiWoo?</span></a>
       <a href="#section-2"><span>02</span><span class="toc-title">Tại sao cần đẩy số liệu?</span></a>
       <a href="#section-3"><span>03</span><span class="toc-title">Ưu tiên nền tảng</span></a>
       <a href="#section-4"><span>04</span><span class="toc-title">Instagram</span></a>
@@ -241,13 +254,13 @@
       <a href="#section-6"><span>06</span><span class="toc-title">Keyword trước brand</span></a>
       <a href="#section-7"><span>07</span><span class="toc-title">Khi brand xác nhận</span></a>
       <a href="#section-8"><span>08</span><span class="toc-title">TikTok</span></a>
-      <a href="#section-9"><span>09</span><span class="toc-title">Naver / Daum</span></a>
+      <a href="#section-9"><span>09</span><span class="toc-title">Thị trường Hàn</span></a>
       <a href="#section-10"><span>10</span><span class="toc-title">YouTube / Shorts</span></a>
       <a href="#section-11"><span>11</span><span class="toc-title">Chuẩn bị trước Milan</span></a>
-      <a href="#section-12"><span>12</span><span class="toc-title">Xuất cảnh / đến Milan</span></a>
+      <a href="#section-12"><span>12</span><span class="toc-title">Ngày đến Milan</span></a>
       <a href="#section-13"><span>13</span><span class="toc-title">Ngày show</span></a>
       <a href="#section-14"><span>14</span><span class="toc-title">Sau show</span></a>
-      <a href="#section-15"><span>15</span><span class="toc-title">Mục tiêu triệu</span></a>
+      <a href="#section-15"><span>15</span><span class="toc-title">Lưu ý</span></a>
       <a href="#section-16"><span>16</span><span class="toc-title">Không nên làm</span></a>
       <a href="#section-17"><span>17</span><span class="toc-title">Mục tiêu cuối cùng</span></a>
     </div>
@@ -255,15 +268,13 @@
 
   <main id="main">
     <article class="intro-card" aria-label="Giới thiệu">
-      <p>Park Si Woo đã xác nhận sẽ tham dự <strong>Milan Fashion Week 2026</strong>, diễn ra từ ngày <strong>22–28/9/2026</strong>.</p>
-      <p>Đây không đơn thuần là một lịch trình thời trang. Ở thời điểm hiện tại, Milan Fashion Week là một cơ hội quan trọng để Park Si Woo mở rộng hình ảnh từ một diễn viên đang được chú ý sang một nghệ sĩ có <strong>độ nhận diện quốc tế, giá trị thời trang và tiềm năng thương mại độc lập</strong>.</p>
-      <p>Vì vậy, trong đợt Milan lần này, fandom nên tập trung hỗ trợ có chiến lược, ưu tiên <strong>chất lượng số liệu và đúng nơi cần đẩy</strong>, thay vì chỉ chạy theo số lượng.</p>
+      <p>Si Woo tham dự <strong>Milan Fashion Week 2026</strong>, diễn ra từ ngày <strong>22–28/9/2026</strong> không đơn thuần là một lịch trình thời trang. Ở thời điểm hiện tại, Milan Fashion Week là một cơ hội quan trọng để Si Woo mở rộng hình ảnh từ một diễn viên đang được chú ý sang một nghệ sĩ có <strong>độ nhận diện quốc tế, giá trị thời trang và tiềm năng thương mại độc lập</strong>.</p>
+      <p>Vì vậy, trong đợt Milan lần này, chúng ta nên tập trung hỗ trợ có chiến lược, ưu tiên <strong>chất lượng số liệu và đúng nơi cần đẩy</strong>, thay vì chỉ chạy theo số lượng.</p>
     </article>
 
     <aside class="priority-wrap" aria-label="Nền tảng ưu tiên">
       <div class="priority-head">
         <h2>Nền tảng ưu tiên</h2>
-        <p>Đúng nơi · đúng thời điểm · đúng mục tiêu</p>
       </div>
       <div class="platform-grid">
         <div class="platform"><span class="rank">PRIORITY 1</span><h3>Instagram</h3><p>Hình ảnh fashion/luxury và tương tác chính thức.</p></div>
@@ -275,39 +286,32 @@
     </aside>
 
     <section class="section" id="section-1" aria-labelledby="heading-1">
-      <div class="section-heading"><span class="num">01</span><h2 id="heading-1">Tại sao Milan Fashion Week quan trọng?</h2></div>
+      <div class="section-heading"><span class="num">01</span><h2 id="heading-1">Tại sao Milan Fashion Week quan trọng với SiWoo?</h2></div>
       <p>Milan Fashion Week là một trong những tuần lễ thời trang lớn nhất thế giới, nơi tập trung các nhà mốt, tạp chí, stylist, photographer, fashion editor, celebrity team và các đơn vị phụ trách marketing/PR của thương hiệu.</p>
-      <p>Đối với một nghệ sĩ, xuất hiện tại Fashion Week không chỉ mang ý nghĩa “đi xem show”.</p>
-      <p>Đây còn là nơi ngành thời trang quan sát:</p>
+      <p>Đối với một nghệ sĩ, xuất hiện tại Fashion Week không chỉ mang ý nghĩa đi xem show, mà còn là nơi ngành thời trang quan sát:</p>
       <ul>
-        <li>Nghệ sĩ có tạo được sự chú ý hay không.</li><li>Hình ảnh của nghệ sĩ có phù hợp với thời trang/luxury hay không.</li><li>Fandom có thực sự quan tâm tới hoạt động cá nhân của nghệ sĩ hay chỉ tập trung vào phim hoặc CP.</li><li>Một bài đăng có nghệ sĩ đó xuất hiện tạo được bao nhiêu tương tác.</li><li>Tên nghệ sĩ có được tìm kiếm và nhắc tới sau sự kiện hay không.</li><li>Fashion media và người ngoài fandom có chủ động đăng lại hình ảnh của nghệ sĩ hay không.</li>
+        <li>Nghệ sĩ có tạo được sự chú ý hay không</li><li>Hình ảnh của nghệ sĩ có phù hợp với thời trang/luxury hay không</li><li>Fandom có thực sự quan tâm tới hoạt động cá nhân của nghệ sĩ hay chỉ tập trung vào phim hoặc CP</li><li>Một bài đăng có nghệ sĩ đó xuất hiện tạo được bao nhiêu tương tác</li><li>Tên nghệ sĩ có được tìm kiếm và nhắc tới sau sự kiện hay không</li><li>Fashion media và người ngoài fandom có chủ động đăng lại hình ảnh của nghệ sĩ hay không</li>
       </ul>
       <p>Với Si Woo, Milan càng đáng chú ý vì đây là bước tiếp theo sau hoạt động tại Hong Kong Fashion Week.</p>
-      <p>Mục tiêu của chúng ta lần này không chỉ là:</p>
-      <blockquote><strong>“Park Si Woo rất nổi.”</strong></blockquote>
+      <p>Mục tiêu của chúng ta lần này không chỉ là <strong>“Park Si Woo rất nổi.”</strong></p>
       <p>Mà phải để người ngoài fandom có thể nhìn thấy:</p>
       <blockquote><strong>“Park Si Woo có sức hút riêng trong lĩnh vực thời trang và có khả năng tạo ra giá trị truyền thông cho thương hiệu.”</strong></blockquote>
     </section>
 
     <section class="section" id="section-2" aria-labelledby="heading-2">
-      <div class="section-heading"><span class="num">02</span><h2 id="heading-2">Tại sao fandom cần đẩy số liệu?</h2></div>
-      <p>Brand, tạp chí và các bên phụ trách celebrity marketing không chỉ nhìn follower.</p>
-      <p>Họ còn quan sát phản ứng thực tế của công chúng đối với nghệ sĩ.</p>
-      <p>Ví dụ:</p>
-      <p>Một nhà mốt đăng ảnh Si Woo.</p>
+      <div class="section-heading"><span class="num">02</span><h2 id="heading-2">Tại sao cần đẩy số liệu?</h2></div>
+      <p>Brand, tạp chí và các bên phụ trách celebrity marketing không chỉ nhìn follower. Họ còn quan sát phản ứng thực tế của công chúng đối với nghệ sĩ.</p>
       <p>Nếu bài đó nhanh chóng có:</p>
-      <ul><li>lượng comment tốt;</li><li>nhiều lượt share;</li><li>nhiều lượt save;</li><li>thảo luận tự nhiên;</li><li>fan quốc tế;</li><li>người ngoài fandom hỏi “Who is he?”;</li><li>các tài khoản thời trang khác bắt đầu repost;</li></ul>
+      <ul><li>lượng comment tốt</li><li>nhiều lượt share</li><li>nhiều lượt save</li><li>thảo luận tự nhiên</li><li>fan quốc tế</li><li>người ngoài fandom hỏi “Who is he?”</li><li>các tài khoản thời trang khác bắt đầu repost</li></ul>
       <p>thì điều đó có giá trị hơn rất nhiều so với việc một fanpage riêng của chúng ta đạt hàng chục nghìn like.</p>
-      <p>Nói cách khác:</p>
-      <blockquote><strong>Đừng chỉ làm số liệu đẹp cho fandom nhìn. Hãy tạo số liệu ở nơi brand và media có thể nhìn thấy.</strong></blockquote>
+      <blockquote><strong>Nói cách khác: Không chỉ làm số liệu đẹp cho fandom nhìn, mà tạo số liệu ở nơi brand và media có thể nhìn thấy.</strong></blockquote>
       <p>Một chiến dịch Milan tốt có thể góp phần tạo nền tảng cho những cơ hội tiếp theo như:</p>
-      <ul><li>lời mời fashion event;</li><li>magazine/editorial;</li><li>hợp tác thương hiệu;</li><li>campaign;</li><li>brand ambassador;</li><li>những Fashion Week tiếp theo.</li></ul>
-      <p>Không có số liệu nào đảm bảo trực tiếp những cơ hội trên, nhưng phản ứng tốt của công chúng là một tín hiệu thương mại có giá trị.</p>
+      <ul><li>lời mời fashion event</li><li>magazine/editorial</li><li>hợp tác thương hiệu</li><li>campaign</li><li>brand ambassador</li><li>những Fashion Week tiếp theo</li></ul>
+      <p>Không có số liệu nào đảm bảo trực tiếp những cơ hội trên, nhưng phản ứng tốt của công chúng là một tín hiệu thương mại có giá trị cho SiWoo.</p>
     </section>
 
     <section class="section" id="section-3" aria-labelledby="heading-3">
-      <div class="section-heading"><span class="num">03</span><h2 id="heading-3">Ưu tiên nền tảng</h2></div>
-      <p>Đối với fandom Việt Nam/quốc tế, chúng ta tập trung:</p>
+      <div class="section-heading"><span class="num">03</span><h2 id="heading-3">Các nền tảng ưu tiên</h2></div>
       <div class="mini-grid">
         <div class="mini-card"><h3>PRIORITY 1 — INSTAGRAM</h3><p>Mặt trận quan trọng nhất đối với hình ảnh fashion/luxury.</p></div>
         <div class="mini-card"><h3>PRIORITY 2 — X</h3><p>Tạo độ phủ và thảo luận realtime trong thời gian diễn ra sự kiện.</p></div>
@@ -315,22 +319,21 @@
         <div class="mini-card"><h3>PRIORITY 4 — NAVER / DAUM</h3><p>Giữ độ nóng và lượng tìm kiếm tại Hàn Quốc.</p></div>
         <div class="mini-card"><h3>PRIORITY 5 — YOUTUBE / SHORTS</h3><p>Kéo dài vòng đời fancam, video và nội dung Fashion Week.</p></div>
       </div>
-      <p>Không cần fandom Việt Nam chia lực cho Weibo/Xiaohongshu; phần đó để fan Trung phụ trách.</p>
+      <p>Weibo đó để fan Trung phụ trách.</p>
     </section>
 
     <section class="section" id="section-4" aria-labelledby="heading-4">
       <div class="section-heading"><span class="num">04</span><h2 id="heading-4">Instagram — Mặt trận quan trọng nhất</h2></div>
       <p>Khi bắt đầu có nội dung Milan, hãy ưu tiên tương tác theo thứ tự:</p>
       <ol><li><strong>Bài của thương hiệu/show có Si Woo</strong></li><li><strong>Bài collab Brand × Park Si Woo</strong></li><li><strong>Bài của fashion magazine/media</strong></li><li><strong>Instagram chính thức của Park Si Woo</strong></li><li><strong>INUFF COMPANY</strong></li><li><strong>Photographer / stylist / makeup artist</strong></li><li><strong>Fan account</strong></li></ol>
-      <p>Điểm cực kỳ quan trọng:</p>
       <blockquote>1 lượt tương tác trên bài chính thức của thương hiệu có giá trị khác hoàn toàn với 1 lượt tương tác trên fanpage.</blockquote>
       <h3>Khi thấy bài/Reel có Si Woo:</h3>
-      <ul class="checklist"><li>Like.</li><li>Xem Reel đầy đủ.</li><li>Save.</li><li>Share lên Story.</li><li>Share cho bạn bè nếu phù hợp.</li><li>Comment có nội dung.</li><li>Reply các comment khác để tạo conversation tự nhiên.</li><li>Nếu là carousel, xem đầy đủ các ảnh.</li></ul>
+      <ul class="checklist"><li>Like</li><li>Xem Reel đầy đủ</li><li>Save</li><li>Share lên Story</li><li>Share cho bạn bè nếu phù hợp</li><li>Comment có nội dung</li><li>Reply các comment khác để tạo conversation tự nhiên</li><li>Nếu là carousel, xem đầy đủ các ảnh</li></ul>
       <h3>Comment nên tập trung vào:</h3>
-      <ul><li>Park Si Woo.</li><li>Outfit.</li><li>Visual.</li><li>Styling.</li><li>Sự phù hợp giữa Si Woo và brand.</li><li>Mong muốn thấy thêm collaboration trong tương lai.</li></ul>
+      <ul><li>Park Si Woo</li><li>Outfit</li><li>Visual</li><li>Styling</li><li>Sự phù hợp giữa Si Woo và brand</li><li>Mong muốn thấy thêm collaboration trong tương lai</li></ul>
       <h3>Ví dụ:</h3>
       <div class="samples"><p>“Park Siwoo fits the brand’s aesthetic beautifully.”</p><p>“Love the styling on Park Siwoo. He looks incredible in this collection.”</p><p>“Park Siwoo and [BRAND] look so good together.”</p><p>“박시우 배우와 브랜드의 분위기가 정말 잘 어울려요.”</p></div>
-      <div class="callout avoid"><h3>Tránh:</h3><ul><li>Spam cùng một câu hàng trăm lần.</li><li>Chỉ comment emoji.</li><li>Đem CP vào bài của nhà mốt.</li><li>Nhắc nhân vật phim thay vì Park Si Woo.</li><li>Tag hàng loạt tài khoản không liên quan.</li></ul></div>
+      <div class="callout avoid"><h3>Tránh:</h3><ul><li>Spam cùng một câu hàng trăm lần</li><li>Chỉ comment emoji</li><li>Đem CP vào bài của nhà mốt</li><li>Nhắc nhân vật phim thay vì Park Si Woo</li><li>Tag hàng loạt tài khoản không liên quan</li></ul></div>
       <p>Fashion Week lần này chúng ta đang quảng bá:</p>
       <blockquote><strong>PARK SI WOO — ACTOR / FASHION FIGURE</strong><br>chứ không phải một nhân vật phim hay một couple.</blockquote>
     </section>
@@ -340,10 +343,9 @@
       <p>X phù hợp nhất để tạo cảm giác:</p>
       <blockquote><strong>“Park Si Woo đang được nói tới ở Milan.”</strong></blockquote>
       <h3>Các thời điểm nên tập trung:</h3>
-      <ul><li>Ngày xuất cảnh.</li><li>Khi đến Milan.</li><li>Khi brand/show được xác nhận.</li><li>Khoảng 1 giờ trước show.</li><li>Thời điểm Si Woo xuất hiện.</li><li>2–4 giờ sau show.</li><li>Khi báo/tạp chí tung ảnh HD.</li><li>Khi fashion account đăng clip hoặc ảnh mới.</li></ul>
+      <ul><li>Ngày xuất cảnh</li><li>Khi đến Milan</li><li>Khi brand/show được xác nhận</li><li>Khoảng 1 giờ trước show</li><li>Thời điểm Si Woo xuất hiện</li><li>2–4 giờ sau show</li><li>Khi báo/tạp chí tung ảnh HD</li><li>Khi fashion account đăng clip hoặc ảnh mới</li></ul>
       <h3>Không chỉ repost.</h3>
-      <p>Fan có thể:</p>
-      <ul><li>đăng bài gốc;</li><li>quote bài brand;</li><li>quote fashion media;</li><li>repost;</li><li>đăng ảnh;</li><li>đăng clip;</li><li>viết reaction;</li><li>làm thread ảnh;</li><li>outfit breakdown;</li><li>cập nhật press coverage.</li></ul>
+      <ul><li>đăng bài gốc</li><li>quote bài brand</li><li>quote fashion media</li><li>repost</li><li>đăng ảnh</li><li>đăng clip</li><li>viết reaction</li><li>làm thread ảnh</li><li>outfit breakdown</li><li>cập nhật press coverage</li></ul>
       <p>Mỗi account nên cố gắng tạo <strong>nội dung riêng</strong>, dù chỉ 1–2 câu.</p>
     </section>
 
@@ -360,15 +362,9 @@
 
     <section class="section" id="section-7" aria-labelledby="heading-7">
       <div class="section-heading"><span class="num">07</span><h2 id="heading-7">Khi brand/show được xác nhận</h2></div>
-      <p>Đây mới là thời điểm quan trọng nhất.</p>
-      <p>Ngay khi có thông tin chính thức, fandom nên chuyển keyword sang tên brand.</p>
-      <h3>Ví dụ:</h3>
-      <p><span class="keyword">PARK SIWOO AT [BRAND]</span><span class="keyword">PARK SIWOO FOR [BRAND]</span><span class="keyword">PARK SIWOO AT [BRAND] SS27</span></p>
-      <p>Có thể sử dụng hashtag dạng:</p>
-      <p><span class="keyword">#PARKSIWOOxBRAND</span></p>
-      <p>nhưng chỉ khi fandom đã thống nhất.</p>
+      <p>Ngay khi có thông tin chính thức, ta nên chuyển keyword sang tên brand.</p>
+      <blockquote><strong>Phần này sẽ cập nhật sau!</strong></blockquote>
       <p>Không nên tự tạo quá nhiều hashtag khác nhau vì sẽ làm dữ liệu bị chia nhỏ.</p>
-      <p>Đặc biệt:</p>
       <blockquote>Không đoán brand chỉ từ airport outfit hoặc quần áo Si Woo mặc nếu chưa có xác nhận.</blockquote>
       <p>Chờ nguồn chính thức rồi mới chạy.</p>
     </section>
@@ -376,94 +372,65 @@
     <section class="section" id="section-8" aria-labelledby="heading-8">
       <div class="section-heading"><span class="num">08</span><h2 id="heading-8">TikTok — Mục tiêu là non-fan</h2></div>
       <p>TikTok không nên chỉ là nơi fan tự xem fancam của nhau.</p>
-      <p>Mục tiêu quan trọng nhất là:</p>
-      <blockquote><strong>Người chưa biết Park Si Woo cũng muốn dừng lại xem video.</strong></blockquote>
+      <p>Mục tiêu quan trọng nhất là: <strong>Người chưa biết Park Si Woo cũng muốn dừng lại xem video.</strong></p>
       <h3>Các dạng content nên làm:</h3>
-      <ul><li>“Who is Park Siwoo?”</li><li>“Park Siwoo at Milan Fashion Week.”</li><li>“From Hong Kong Fashion Week to Milan.”</li><li>“Park Siwoo’s fashion evolution.”</li><li>Airport → Milan → Fashion Show transition.</li><li>Outfit details.</li><li>Close-up visual.</li><li>Arrival.</li><li>Fashion media reaction.</li><li>“Why Park Siwoo fits [BRAND].”</li><li>Những khoảnh khắc tương tác tại show.</li></ul>
-      <div class="action-grid"><div class="callout good"><h3>Video visual edit:</h3><p>Khoảng <strong>8–20 giây</strong>.</p></div><div class="callout good"><h3>Video kể chuyện:</h3><p>Khoảng <strong>20–45 giây</strong>.</p></div></div>
-      <p>1–2 giây đầu nên có ngay:</p>
-      <ul><li>khuôn mặt;</li><li>full outfit;</li><li>hoặc khoảnh khắc đẹp nhất.</li></ul>
-      <p>Trong caption/on-screen text nên có:</p>
-      <p><span class="keyword">Park Siwoo</span><span class="keyword">박시우</span><span class="keyword">Milan Fashion Week</span></p>
-      <p>và sau khi biết brand thì thêm tên brand.</p>
-      <p>Đừng chỉ nhìn số view.</p>
-      <p>Những hành vi có giá trị gồm:</p>
-      <ul><li>xem hết video;</li><li>xem lại;</li><li>share;</li><li>save;</li><li>comment.</li></ul>
+      <ul><li>“Who is Park Siwoo?”</li><li>“Park Siwoo at Milan Fashion Week”</li><li>“From Hong Kong Fashion Week to Milan”</li><li>“Park Siwoo’s fashion evolution”</li><li>Airport → Milan → Fashion Show transition</li><li>Outfit details</li><li>Close-up visual</li><li>Arrival</li><li>Fashion media reaction</li><li>“Why Park Siwoo fits [BRAND]”</li><li>Những khoảnh khắc tương tác tại show</li></ul>
     </section>
 
     <section class="section" id="section-9" aria-labelledby="heading-9">
-      <div class="section-heading"><span class="num">09</span><h2 id="heading-9">Naver / Daum — Đừng bỏ quên thị trường Hàn</h2></div>
-      <p>Milan là hoạt động quốc tế, nhưng phản ứng tại Hàn Quốc vẫn quan trọng.</p>
-      <p>Trong thời gian diễn ra sự kiện có thể chủ động search:</p>
+      <div class="section-heading"><span class="num">09</span><h2 id="heading-9">Naver / Daum — Thị trường Hàn</h2></div>
+      <p>Milan là hoạt động quốc tế, nhưng phản ứng tại Hàn Quốc vẫn quan trọng, trong thời gian diễn ra sự kiện có thể chủ động search:</p>
       <p><span class="keyword">박시우</span><span class="keyword">박시우 밀라노</span><span class="keyword">박시우 밀라노 패션위크</span><span class="keyword">박시우 패션</span></p>
-      <p>Sau khi biết brand:</p>
-      <p><span class="keyword">박시우 + tên thương hiệu</span></p>
-      <h3>Nếu có bài báo:</h3>
-      <ul><li>mở bài;</li><li>đọc bình thường;</li><li>reaction/recommend nếu nền tảng cho phép;</li><li>chia sẻ bài gốc;</li><li>comment tự nhiên;</li><li>tìm kiếm tên Si Woo bằng thanh search.</li></ul>
-      <p>Không cần refresh bài liên tục hoặc sử dụng các cách tạo traffic bất thường.</p>
-      <blockquote>Mục tiêu là tạo <strong>interest thật và search thật</strong>.</blockquote>
+      <p>Sau khi biết brand: <span class="keyword">박시우 + tên thương hiệu</span></p>
+      <p>Nếu có bài báo:</p>
+      <ul><li>mở bài</li><li>đọc bình thường</li><li>tìm kiếm tên Si Woo bằng thanh search</li></ul>
+      <p>Không cần refresh bài liên tục hoặc sử dụng các cách tạo traffic bất thường, mục tiêu là tạo <strong>interest thật và search thật</strong>.</p>
     </section>
 
     <section class="section" id="section-10" aria-labelledby="heading-10">
       <div class="section-heading"><span class="num">10</span><h2 id="heading-10">YouTube / Shorts</h2></div>
       <p>YouTube có thể không phải mặt trận realtime mạnh nhất nhưng rất hữu ích cho hậu kỳ.</p>
       <h3>Ưu tiên:</h3>
-      <ul><li>fancam;</li><li>airport video;</li><li>arrival;</li><li>fashion show clips;</li><li>outfit edit;</li><li>press compilation;</li><li>Shorts;</li><li>video tổng hợp hành trình Milan.</li></ul>
+      <ul><li>fancam</li><li>airport video</li><li>arrival</li><li>fashion show clips</li><li>outfit edit</li><li>press compilation</li><li>Shorts</li><li>video tổng hợp hành trình Milan</li></ul>
       <p>Khi video chính thức của báo, tạp chí hoặc brand có Si Woo:</p>
-      <ul class="checklist"><li>xem đầy đủ;</li><li>like;</li><li>comment;</li><li>share.</li></ul>
+      <ul class="checklist"><li>xem đầy đủ</li><li>like</li><li>comment</li><li>share</li></ul>
     </section>
 
     <section class="section" id="section-11" aria-labelledby="heading-11">
       <div class="section-heading"><span class="num">11</span><h2 id="heading-11">Trước Milan — Chúng ta cần chuẩn bị gì?</h2></div>
-      <p>Có thể chuẩn bị trước:</p>
-      <h3>PROFILE</h3><p>Một profile ngắn bằng Anh/Hàn:</p><blockquote><strong>Park Siwoo — Korean actor attending Milan Fashion Week 2026.</strong></blockquote><p>Dùng để giới thiệu khi non-fan hỏi.</p>
-      <h3>FASHION ARCHIVE</h3><p>Tổng hợp những outfit nổi bật trước đây.</p>
-      <h3>TIMELINE</h3><p>Hong Kong Fashion Week → Milan Fashion Week.</p>
-      <h3>COUNTDOWN</h3><p><span class="keyword">D-3</span><span class="keyword">D-2</span><span class="keyword">D-1</span></p>
-      <h3>DATA GUIDE</h3><p>Thống nhất:</p><ul><li>cách viết tên;</li><li>keyword;</li><li>hashtag;</li><li>account chính thức cần follow.</li></ul>
-      <h3>CONTENT BANK</h3><p>Chuẩn bị template cho:</p><ul><li>airport;</li><li>arrival;</li><li>outfit;</li><li>show;</li><li>HD photos;</li><li>magazine post;</li><li>press coverage.</li></ul>
-      <p>Như vậy khi sự kiện xảy ra, fan chỉ cần cập nhật ảnh/thông tin chứ không phải bắt đầu làm từ đầu.</p>
+      <p>Tạo acc hoặc dùng acc cũ like, tương tác các post về Si Woo.</p>
     </section>
 
     <section class="section" id="section-12" aria-labelledby="heading-12">
-      <div class="section-heading"><span class="num">12</span><h2 id="heading-12">Ngày xuất cảnh / Đến Milan</h2></div>
+      <div class="section-heading"><span class="num">12</span><h2 id="heading-12">Ngày đến Milan</h2></div>
       <p>Nội dung nên tập trung:</p>
-      <ul><li>Airport look full body.</li><li>Bag/shoes/accessories.</li><li>Walking clip.</li><li>Arrival.</li><li>Visual edit.</li><li>Bài giới thiệu bằng tiếng Anh cho non-fan.</li></ul>
+      <ul><li>Airport look full body</li><li>Bag/shoes/accessories</li><li>Walking clip</li><li>Arrival</li><li>Visual edit</li></ul>
       <p>Có thể sử dụng:</p><p><span class="keyword">PARK SIWOO IN MILAN</span></p>
-      <p>nhưng không cần chạy hashtag quá mạnh quá sớm.</p>
-      <blockquote>Hãy giữ lực cho thời điểm show/brand chính thức.</blockquote>
+      <p>nhưng không cần chạy hashtag quá mạnh quá sớm, giữ lực cho thời điểm show/brand chính thức.</p>
     </section>
 
     <section class="section" id="section-13" aria-labelledby="heading-13">
       <div class="section-heading"><span class="num">13</span><h2 id="heading-13">Ngày show — Ưu tiên cao nhất</h2></div>
-      <p>Ngay khi show được xác nhận:</p>
-      <h3>Fandom cần biết:</h3>
-      <ul><li>Brand.</li><li>Giờ show.</li><li>Tài khoản Instagram/X/TikTok chính thức của brand.</li><li>Fashion media đang onsite.</li><li>Keyword thống nhất.</li><li>Hashtag thống nhất.</li></ul>
-      <h3>Khi Si Woo xuất hiện:</h3>
-      <p>Tập trung ngay vào:</p>
+      <p>Khi Si Woo xuất hiện, tập trung ngay vào:</p>
       <blockquote><strong>BRAND POST → MEDIA POST → PARK SIWOO POST</strong></blockquote>
-      <p>Nội dung fan có thể triển khai:</p>
-      <ul><li>Arrival.</li><li>Photowall.</li><li>Full outfit.</li><li>Close-up.</li><li>Outfit breakdown.</li><li>Video đi vào venue.</li><li>Interaction với fashion figures/celebrities.</li><li>HD photos.</li><li>Reaction từ media.</li><li>Article/thread tổng hợp.</li></ul>
-      <p>Đây là khoảng thời gian nên tập trung nhân lực nhiều nhất.</p>
     </section>
 
     <section class="section" id="section-14" aria-labelledby="heading-14">
-      <div class="section-heading"><span class="num">14</span><h2 id="heading-14">Sau show — Không dừng ngay</h2></div>
-      <p>Fashion Week không kết thúc khi Si Woo rời venue.</p>
-      <p>Trong <strong>48–72 giờ tiếp theo</strong>, vẫn nên tiếp tục:</p>
-      <ul><li>tương tác các bài mới;</li><li>press coverage;</li><li>ảnh HD;</li><li>video mới;</li><li>photographer post;</li><li>magazine post;</li><li>TikTok edit;</li><li>YouTube Shorts;</li><li>recap.</li></ul>
+      <div class="section-heading"><span class="num">14</span><h2 id="heading-14">Sau show</h2></div>
+      <p>Fashion Week không kết thúc khi Si Woo rời venue. Trong <strong>48–72 giờ tiếp theo</strong>, vẫn nên tiếp tục:</p>
+      <ul><li>tương tác các bài mới</li><li>press coverage</li><li>ảnh HD</li><li>video mới</li><li>photographer post</li><li>magazine post</li><li>TikTok edit</li><li>YouTube Shorts</li><li>recap</li></ul>
       <p>Có thể làm các nội dung:</p>
       <p><span class="keyword">Park Siwoo’s Milan Fashion Week debut</span><span class="keyword">Park Siwoo at [BRAND] SS27</span><span class="keyword">Park Siwoo Milan Fashion Week highlights</span><span class="keyword">Park Siwoo fashion moments in Milan</span></p>
       <p>Một bài media xuất hiện sau show 24 giờ vẫn rất đáng tương tác.</p>
     </section>
 
     <section class="section" id="section-15" aria-labelledby="heading-15">
-      <div class="section-heading"><span class="num">15</span><h2 id="heading-15">Đừng quá ám ảnh với “mục tiêu triệu”</h2></div>
+      <div class="section-heading"><span class="num">15</span><h2 id="heading-15">LƯU Ý</h2></div>
       <p>Không cần tự đặt những mục tiêu như:</p>
       <div class="callout avoid"><h3>Không cần đặt khi chưa có căn cứ</h3><p>“phải đủ 1 triệu tweet”</p><p>“phải 100k hashtag”</p></div>
       <p>nếu chúng ta không có căn cứ.</p>
       <p>Một chiến dịch tốt nên nhìn vào:</p>
-      <ul><li>tốc độ tương tác trên bài chính thức;</li><li>share/save;</li><li>comment có nội dung;</li><li>lượng original posts;</li><li>search volume;</li><li>số lượng fashion media tự đăng Si Woo;</li><li>non-fan bắt đầu hỏi về Si Woo;</li><li>bài viral ngoài fandom;</li><li>follower growth;</li><li>lượng press coverage sau Milan.</li></ul>
+      <ul><li>tốc độ tương tác trên bài chính thức</li><li>share/save</li><li>comment có nội dung</li><li>lượng original posts</li><li>search volume</li><li>số lượng fashion media tự đăng Si Woo</li><li>non-fan bắt đầu hỏi về Si Woo</li><li>bài viral ngoài fandom</li><li>follower growth</li><li>lượng press coverage sau Milan</li></ul>
       <blockquote><strong>10.000 tương tác đúng chỗ có thể hữu ích hơn 100.000 tương tác nằm hoàn toàn trong fan circle.</strong></blockquote>
     </section>
 
@@ -471,7 +438,7 @@
       <div class="section-heading"><span class="num">16</span><h2 id="heading-16">Những điều không nên làm</h2></div>
       <div class="callout avoid">
         <h3>Tránh</h3>
-        <ul><li>❌ Spam cùng một comment.</li><li>❌ Copy-paste hàng trăm bài giống nhau.</li><li>❌ Nhồi quá nhiều hashtag.</li><li>❌ Mang CP vào comment section của brand.</li><li>❌ Đăng tin brand/show chưa xác nhận.</li><li>❌ Đăng ảnh bỏ credit.</li><li>❌ Che logo/credit của photographer.</li><li>❌ Tag brand vào nội dung không liên quan.</li><li>❌ Chỉ tập trung like mà bỏ qua share/save/comment.</li><li>❌ Chạy hashtag quá sớm rồi hết lực trước giờ show.</li><li>❌ Công kích nghệ sĩ khác hoặc fandom khác.</li></ul>
+        <ul><li>Spam cùng một comment</li><li>Copy-paste hàng trăm bài giống nhau</li><li>Nhồi quá nhiều hashtag</li><li>Mang CP vào comment section của brand</li><li>Đăng tin brand/show chưa xác nhận</li><li>Đăng ảnh bỏ credit</li><li>Che logo/credit của photographer</li><li>Tag brand vào nội dung không liên quan</li><li>Chỉ tập trung like mà bỏ qua share/save/comment</li><li>Chạy hashtag quá sớm rồi hết lực trước giờ show</li><li>Công kích nghệ sĩ khác hoặc fandom khác</li></ul>
       </div>
       <p>Ở Fashion Week, <strong>hình ảnh fandom cũng là một phần của hình ảnh nghệ sĩ</strong>.</p>
       <blockquote>Hãy để người ngoài khi nhìn vào Park Si Woo thấy một fandom tích cực, có tổ chức và tôn trọng fashion community.</blockquote>
@@ -492,14 +459,31 @@
       <p>Milan lần này không chỉ là một lịch trình đẹp để fandom ngắm ảnh.</p>
       <p>Đây là cơ hội để chúng ta giúp những người trong ngành nhìn thấy:</p>
       <blockquote><strong>PARK SI WOO IS WORTH WATCHING.</strong></blockquote>
-      <p>Hãy tập trung đúng nơi, đúng thời điểm và ưu tiên chất lượng hơn số lượng.</p>
       <p><strong>PARK SIWOO AT MILAN FASHION WEEK 2026</strong></p>
     </section>
 
     <section class="finale" aria-label="Thông điệp kết">
       <p class="statement">PARK SI WOO <span>IS WORTH WATCHING.</span></p>
-      <p>Hãy tập trung đúng nơi, đúng thời điểm và ưu tiên chất lượng hơn số lượng.</p>
       <p class="closing">PARK SIWOO AT MILAN FASHION WEEK 2026</p>
+    </section>
+
+    <section class="about" aria-labelledby="about-heading">
+      <div class="about-heading"><span aria-hidden="true">♡</span><h2 id="about-heading">Về Mai Đỏ Phủ Tuyết</h2></div>
+      <p>Trạm Mai Đỏ Phủ Tuyết không trực thuộc, không chịu sự quản lý và không đại diện cho bất kỳ fandom, fanbase hay cộng đồng người hâm mộ nào. Trạm cũng không đại diện cho toàn thể người hâm mộ Park Si Woo tại Việt Nam.</p>
+      <p>Các hoạt động của trạm được thực hiện với mục đích ủng hộ Park Si Woo một cách tích cực, minh bạch và tôn trọng. Khi triển khai project, trạm sẽ ưu tiên tuân thủ thông báo từ nghệ sĩ, công ty quản lý, ban tổ chức và các kênh chính thức; đồng thời chủ động tham khảo hoặc phối hợp với những cộng đồng người hâm mộ liên quan khi cần thiết.</p>
+      <p><strong>Mai Đỏ Phủ Tuyết tôn trọng:</strong></p>
+      <ul>
+        <li>Quyết định, định hướng hoạt động và đời sống riêng tư của Park Si Woo</li>
+        <li>Các mối quan hệ cá nhân, đồng nghiệp và những người xuất hiện trong cuộc sống của Park Si Woo</li>
+        <li>Sự khác biệt giữa người hâm mộ cá nhân, người yêu thích couple và các hình thức ủng hộ khác</li>
+        <li>Quyền lựa chọn tham gia hoặc không tham gia bất kỳ project nào</li>
+      </ul>
+      <p>Trạm không cổ vũ fanwar, công kích cá nhân, phân biệt người hâm mộ hoặc áp đặt cách yêu mến nghệ sĩ. Mọi người đều được chào đón miễn là cùng giữ sự tôn trọng dành cho Park Si Woo và cho nhau.</p>
+      <h3>Tuyên bố độc lập</h3>
+      <p>Trang này do người hâm mộ vận hành và chỉ được sử dụng để cập nhật các hoạt động tiếp ứng của Mai Đỏ Phủ Tuyết. Trạm không phải fanclub chính thức, không có quan hệ đại diện hoặc thương mại với Park Si Woo, công ty quản lý hay các đơn vị liên quan.</p>
+      <p>Tên, hình ảnh và các tài sản trí tuệ liên quan đến Park Si Woo thuộc quyền của chủ sở hữu tương ứng.</p>
+      <p class="finance-note">Đối với các hoạt động ủng hộ trong tương lai có liên quan đến tài chính, trạm sẽ ưu tiên phương án để người hâm mộ chuyển trực tiếp đến ban tổ chức hoặc quỹ tiếp nhận, thay vì chuyển vào tài khoản cá nhân của Mai Đỏ Phủ Tuyết. Mọi khoản đóng góp tập thể sẽ được công khai, ghi nhận minh bạch dưới danh nghĩa chung của cộng đồng người hâm mộ và không được gắn thành thành tích riêng của Mai Đỏ Phủ Tuyết.</p>
+      <p class="contact">Email liên hệ: <a href="mailto:parksiwoovietnamfansupport@gmail.com">parksiwoovietnamfansupport@gmail.com</a></p>
     </section>
   </main>
 
@@ -508,6 +492,9 @@
 
   <script>
     (() => {
+      document.querySelectorAll('.section ul li, .about ul li').forEach((item) => {
+        item.textContent = item.textContent.replace(/[.;](?=[”"']?\s*$)/, '');
+      });
       const links = [...document.querySelectorAll('.toc a')];
       const sections = [...document.querySelectorAll('.section')];
       const topLink = document.querySelector('.top-link');
